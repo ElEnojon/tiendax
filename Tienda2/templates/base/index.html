@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %} Tienda {% endblock %}</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+
+<body class="bg-dark">
+
+	<!-- {% block header %}
+	<header>Tienda</header>
+	{% endblock %}
+ -->
+
+	<div>{% block content %}Ahora estas viendo:{% endblock %}</div>
+	<footer style="color: white; ">{% block footer %}Fin del inventario.{% endblock %}</footer>
+
+<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+
+</body>
+</html>
